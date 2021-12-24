@@ -1,0 +1,1788 @@
+NNx, NNy= 0, 0
+Nx,  Ny = 60, 60
+from command line: Px=24, Py=8
+rankmap_lib_set_rankmap2d_size: given proc_size may be ignored.
+tofu size: [A,B,C,X,Y,Z]=[2,3,2,2,2,1]
+----- node coordinates -----
+map for x:  TA  =   0  1  1  0  0  1  1  0  0  1  1  0  0  1  1  0  0  1  1  0  0  1  1  0
+            TB  =   0  0  1  1  2  2  2  2  0  0  1  1  1  1  0  0  2  2  2  2  1  1  0  0
+            TX  =   0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0
+            TY  =   0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1
+map for y:  TC  =   0  1
+            TZ  =   0  0
+inner node size: 2 2
+----------------------------
+using TNI_PATTERN 1 (default)
+tni_list = 1 4 3 5: dim=2 flag=2
+  rankmap_lib_set_rankmap2d: tni_list = 1 4 3 5: mapid=2
+rdma_utofu_comlib: 2d rankmap, size = 48 x 4
+Px, Py = 48, 4; NNx, NNy = 2880, 240
+before set_field: Px, Py = 48, 4; NNx, NNy = 2880, 240
+       np = 192, tofu_vol * 4 = 192
+       dir: min  max  size origin
+        0:  11   12    2   11
+        1:  21   22    2   21
+        2:  22   22    1   22
+        3:   0    1    2    0
+        4:   0    2    3    0
+        5:   0    1    2    0
+rankmap for eval2 (v2)
+  coords_org: 11 21 22 0 0 0
+  coords_size: 2 2 1 2 3 2
+  coords_min: 11 21 22 0 0 0
+  coords_max: 12 22 22 1 2 1
+tofu size: [A,B,C,X,Y,Z]=[2,3,2,2,2,1]
+  rankmap: rank=0 [11 21 22 0 0 0], dir=0: positive_ncoords = 11 21 22 0 0 0 (rank 1), nagative_ncoords = 11 22 22 0 0 0 (rank 17)
+  rankmap: rank=0 [11 21 22 0 0 0], dir=1: positive_ncoords = 11 21 22 0 0 0 (rank 2), nagative_ncoords = 11 21 22 0 0 1 (rank 98)
+set_field: n2 before normalizing=2.303859e+05
+factor for extra buffer: 1
+mpi single buffer: using the given rank map
+size_x size_y: 60  60
+init: 0.028910 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  73.161853 [msec]  (1000 iterations)
+etime_norm2:       5.645956 [msec]   (100 times)
+etime_allreduce:   3.543418 [msec]   (100 times)
+hop:      total  53.133750 [msec]
+           bulk  34.906630 [msec]
+       boundary  1.346530 [msec]
+           pack  1.214945 [msec]
+    communicate  44.251081 [msec]
+      comm. overlap  35.130768 [msec]
+  comm. non-overlap  9.120313 [msec]
+ initiate recv   0.983618 [msec]
+     send wait   2.839856 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 2
+mpi single buffer: using the given rank map
+size_x size_y: 120  120
+init: 0.023980 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  69.415000 [msec]  (1000 iterations)
+etime_norm2:       4.464877 [msec]   (100 times)
+etime_allreduce:   2.350256 [msec]   (100 times)
+hop:      total  51.794890 [msec]
+           bulk  35.037285 [msec]
+       boundary  1.315893 [msec]
+           pack  1.069966 [msec]
+    communicate  42.886893 [msec]
+      comm. overlap  35.256533 [msec]
+  comm. non-overlap  7.630360 [msec]
+ initiate recv   0.957224 [msec]
+     send wait   3.047817 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 4
+mpi single buffer: using the given rank map
+size_x size_y: 240  240
+init: 0.012900 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  69.914979 [msec]  (1000 iterations)
+etime_norm2:       4.983864 [msec]   (100 times)
+etime_allreduce:   2.728496 [msec]   (100 times)
+hop:      total  52.409257 [msec]
+           bulk  34.807104 [msec]
+       boundary  1.302761 [msec]
+           pack  1.034767 [msec]
+    communicate  43.387157 [msec]
+      comm. overlap  35.029614 [msec]
+  comm. non-overlap  8.357543 [msec]
+ initiate recv   1.043904 [msec]
+     send wait   3.121809 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 8
+mpi single buffer: using the given rank map
+size_x size_y: 480  480
+init: 0.013069 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  70.810814 [msec]  (1000 iterations)
+etime_norm2:       4.929115 [msec]   (100 times)
+etime_allreduce:   2.812777 [msec]   (100 times)
+hop:      total  53.181022 [msec]
+           bulk  34.664738 [msec]
+       boundary  1.397759 [msec]
+           pack  1.047234 [msec]
+    communicate  43.952103 [msec]
+      comm. overlap  34.882108 [msec]
+  comm. non-overlap  9.069995 [msec]
+ initiate recv   1.036136 [msec]
+     send wait   3.204444 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 16
+mpi single buffer: using the given rank map
+size_x size_y: 960  960
+init: 0.015960 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  73.593780 [msec]  (1000 iterations)
+etime_norm2:       3.940940 [msec]   (100 times)
+etime_allreduce:   1.846728 [msec]   (100 times)
+hop:      total  54.141771 [msec]
+           bulk  34.173344 [msec]
+       boundary  1.398773 [msec]
+           pack  0.994725 [msec]
+    communicate  44.735668 [msec]
+      comm. overlap  34.395802 [msec]
+  comm. non-overlap  10.339866 [msec]
+ initiate recv   1.064773 [msec]
+     send wait   3.422687 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 32
+mpi single buffer: using the given rank map
+size_x size_y: 1920  1920
+init: 0.025059 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  74.638235 [msec]  (1000 iterations)
+etime_norm2:       3.738960 [msec]   (100 times)
+etime_allreduce:   1.640733 [msec]   (100 times)
+hop:      total  55.640562 [msec]
+           bulk  33.531187 [msec]
+       boundary  1.345418 [msec]
+           pack  0.973377 [msec]
+    communicate  49.173379 [msec]
+      comm. overlap  33.744677 [msec]
+  comm. non-overlap  15.428702 [msec]
+ initiate recv   1.010654 [msec]
+     send wait   0.630377 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 64
+mpi single buffer: using the given rank map
+size_x size_y: 3840  3840
+init: 0.349948 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  80.905505 [msec]  (1000 iterations)
+etime_norm2:       5.312745 [msec]   (100 times)
+etime_allreduce:   3.207673 [msec]   (100 times)
+hop:      total  60.036014 [msec]
+           bulk  32.777950 [msec]
+       boundary  1.158094 [msec]
+           pack  0.968878 [msec]
+    communicate  53.967535 [msec]
+      comm. overlap  33.012989 [msec]
+  comm. non-overlap  20.954546 [msec]
+ initiate recv   1.103091 [msec]
+     send wait   0.324955 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 128
+mpi single buffer: using the given rank map
+size_x size_y: 7680  7680
+init: 0.023930 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  124.129934 [msec]  (1000 iterations)
+etime_norm2:       9.441147 [msec]   (100 times)
+etime_allreduce:   7.327442 [msec]   (100 times)
+hop:      total  99.085179 [msec]
+           bulk  33.582235 [msec]
+       boundary  1.642516 [msec]
+           pack  1.183084 [msec]
+    communicate  88.035390 [msec]
+      comm. overlap  33.798384 [msec]
+  comm. non-overlap  54.237006 [msec]
+ initiate recv   2.492297 [msec]
+     send wait   3.433940 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 256
+mpi single buffer: using the given rank map
+size_x size_y: 15360  15360
+init: 0.021730 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  167.411012 [msec]  (1000 iterations)
+etime_norm2:       14.635707 [msec]   (100 times)
+etime_allreduce:   12.533444 [msec]   (100 times)
+hop:      total  137.181447 [msec]
+           bulk  33.719930 [msec]
+       boundary  1.745449 [msec]
+           pack  1.180621 [msec]
+    communicate  126.006207 [msec]
+      comm. overlap  33.930479 [msec]
+  comm. non-overlap  92.075728 [msec]
+ initiate recv   3.682209 [msec]
+     send wait   1.981520 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 512
+mpi single buffer: using the given rank map
+size_x size_y: 30720  30720
+init: 0.355238 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  258.504697 [msec]  (1000 iterations)
+etime_norm2:       21.797349 [msec]   (100 times)
+etime_allreduce:   19.683339 [msec]   (100 times)
+hop:      total  220.800306 [msec]
+           bulk  33.798668 [msec]
+       boundary  1.771068 [msec]
+           pack  1.177231 [msec]
+    communicate  206.787180 [msec]
+      comm. overlap  34.013406 [msec]
+  comm. non-overlap  172.773774 [msec]
+ initiate recv   3.266365 [msec]
+     send wait   5.257164 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 1024
+mpi single buffer: using the given rank map
+size_x size_y: 61440  61440
+init: 0.013840 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  453.310435 [msec]  (1000 iterations)
+etime_norm2:       6.216760 [msec]   (100 times)
+etime_allreduce:   4.103451 [msec]   (100 times)
+hop:      total  430.904359 [msec]
+           bulk  33.567139 [msec]
+       boundary  1.770470 [msec]
+           pack  1.196918 [msec]
+    communicate  385.018506 [msec]
+      comm. overlap  33.782648 [msec]
+  comm. non-overlap  351.235858 [msec]
+ initiate recv   8.527992 [msec]
+     send wait   31.805136 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 2048
+mpi single buffer: using the given rank map
+size_x size_y: 122880  122880
+init: 0.603498 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  865.957919 [msec]  (1000 iterations)
+etime_norm2:       15.299873 [msec]   (100 times)
+etime_allreduce:   13.201615 [msec]   (100 times)
+hop:      total  834.829064 [msec]
+           bulk  33.334419 [msec]
+       boundary  1.779352 [msec]
+           pack  1.219705 [msec]
+    communicate  717.995306 [msec]
+      comm. overlap  33.551289 [msec]
+  comm. non-overlap  684.444017 [msec]
+ initiate recv   21.282112 [msec]
+     send wait   90.041768 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 4096
+mpi single buffer: using the given rank map
+size_x size_y: 245760  245760
+init: 1.127844 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  1650.790605 [msec]  (1000 iterations)
+etime_norm2:       39.994227 [msec]   (100 times)
+etime_allreduce:   37.792333 [msec]   (100 times)
+hop:      total  1593.088101 [msec]
+           bulk  29.838369 [msec]
+       boundary  1.849665 [msec]
+           pack  1.484363 [msec]
+    communicate  1337.048868 [msec]
+      comm. overlap  30.072346 [msec]
+  comm. non-overlap  1306.976522 [msec]
+ initiate recv   96.407257 [msec]
+     send wait   153.709381 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 8192
+mpi single buffer: using the given rank map
+size_x size_y: 491520  491520
+init: 2.156139 [msec]
+---------------------------------------------
+   solving with mpi single buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  3361.910384 [msec]  (1000 iterations)
+etime_norm2:       188.853187 [msec]   (100 times)
+etime_allreduce:   186.647109 [msec]   (100 times)
+hop:      total  3154.384568 [msec]
+           bulk  28.378013 [msec]
+       boundary  2.336268 [msec]
+           pack  1.655171 [msec]
+    communicate  2456.894571 [msec]
+      comm. overlap  28.614552 [msec]
+  comm. non-overlap  2428.280019 [msec]
+ initiate recv   253.882485 [msec]
+     send wait   436.884607 [msec]
+time resolution: 1e-06 msec.
+done: mpi single buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+total elapsed time:  7499.707363 [msec]

@@ -1,0 +1,1861 @@
+NNx, NNy= 0, 0
+Nx,  Ny = 60, 60
+%% UTOFU interface for one sided communcation  (RDMA) is used.
+sizeof(rdma_comlib_data) = 232, sizeof(int*) = 8
+RDMA_NO_REMOTE_MRQ_POLLING is defined.
+rankmap_lib_set_rankmap2d_size: given proc_size may be ignored.
+tofu size: [A,B,C,X,Y,Z]=[2,3,2,2,2,1]
+----- node coordinates -----
+map for x:  TA  =   0  1  1  0  0  1  1  0  0  1  1  0  0  1  1  0  0  1  1  0  0  1  1  0
+            TB  =   0  0  1  1  2  2  2  2  0  0  1  1  1  1  0  0  2  2  2  2  1  1  0  0
+            TX  =   0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0
+            TY  =   0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1
+map for y:  TC  =   0  1
+            TZ  =   0  0
+inner node size: 2 2
+----------------------------
+using NTI_PATTERN 3 (defined _USE_TNI_PATTERN3
+tni_list = 0 1 2 3: dim=2 flag=2
+  rankmap_lib_set_rankmap2d: tni_list = 0 1 2 3: mapid=2
+rdma_utofu_comlib: 2d rankmap, size = 48 x 4
+Px, Py = 48, 4; NNx, NNy = 2880, 240
+before set_field: Px, Py = 48, 4; NNx, NNy = 2880, 240
+       np = 192, tofu_vol * 4 = 192
+       dir: min  max  size origin
+        0:  20   21    2   20
+        1:  18   19    2   18
+        2:   5    5    1    5
+        3:   0    1    2    0
+        4:   0    2    3    0
+        5:   0    1    2    0
+rankmap for eval2 (v2)
+  coords_org: 20 18 5 0 0 0
+  coords_size: 2 2 1 2 3 2
+  coords_min: 20 18 5 0 0 0
+  coords_max: 21 19 5 1 2 1
+tofu size: [A,B,C,X,Y,Z]=[2,3,2,2,2,1]
+  rankmap: rank=0 [20 18 5 0 0 0], dir=0: positive_ncoords = 20 18 5 0 0 0 (rank 1), nagative_ncoords = 20 19 5 0 0 0 (rank 17)
+  rankmap: rank=0 [20 18 5 0 0 0], dir=1: positive_ncoords = 20 18 5 0 0 0 (rank 2), nagative_ncoords = 20 18 5 0 0 1 (rank 98)
+set_field: n2 before normalizing=2.303859e+05
+after set_field: Px, Py = 48, 4; NNx, NNy = 2880, 240
+factor for extra buffer: 1
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 60  60
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.113410 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  66.677167 [msec]  (1000 iterations)
+etime_norm2:       3.799230 [msec]   (100 times)
+etime_allreduce:   1.750900 [msec]   (100 times)
+hop:      total  46.727509 [msec]
+           bulk  37.900033 [msec]
+       boundary  1.057010 [msec]
+           pack  0.906139 [msec]
+    communicate  40.221242 [msec]
+      comm. overlap  38.096453 [msec]
+  comm. non-overlap  2.124789 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   2.119288 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 2
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 120  120
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.129640 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  66.187108 [msec]  (1000 iterations)
+etime_norm2:       3.865840 [msec]   (100 times)
+etime_allreduce:   1.817020 [msec]   (100 times)
+hop:      total  46.464389 [msec]
+           bulk  37.916031 [msec]
+       boundary  1.072260 [msec]
+           pack  0.774370 [msec]
+    communicate  40.115341 [msec]
+      comm. overlap  38.118851 [msec]
+  comm. non-overlap  1.996490 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   2.041620 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 4
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 240  240
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.186980 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  67.348287 [msec]  (1000 iterations)
+etime_norm2:       4.726339 [msec]   (100 times)
+etime_allreduce:   2.669919 [msec]   (100 times)
+hop:      total  46.658570 [msec]
+           bulk  38.042052 [msec]
+       boundary  1.084819 [msec]
+           pack  0.794550 [msec]
+    communicate  40.289181 [msec]
+      comm. overlap  38.245442 [msec]
+  comm. non-overlap  2.043739 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   2.039300 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 8
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 480  480
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.118560 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  65.869838 [msec]  (1000 iterations)
+etime_norm2:       3.259360 [msec]   (100 times)
+etime_allreduce:   1.217120 [msec]   (100 times)
+hop:      total  46.635652 [msec]
+           bulk  37.994684 [msec]
+       boundary  1.075099 [msec]
+           pack  0.821140 [msec]
+    communicate  40.242414 [msec]
+      comm. overlap  38.196584 [msec]
+  comm. non-overlap  2.045830 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   2.048550 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 16
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 960  960
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.721840 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  65.835348 [msec]  (1000 iterations)
+etime_norm2:       3.154859 [msec]   (100 times)
+etime_allreduce:   1.113340 [msec]   (100 times)
+hop:      total  46.671674 [msec]
+           bulk  37.996244 [msec]
+       boundary  1.080900 [msec]
+           pack  0.814310 [msec]
+    communicate  40.250254 [msec]
+      comm. overlap  38.196244 [msec]
+  comm. non-overlap  2.054010 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   2.065020 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 32
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 1920  1920
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.170280 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  65.874268 [msec]  (1000 iterations)
+etime_norm2:       3.326830 [msec]   (100 times)
+etime_allreduce:   1.285240 [msec]   (100 times)
+hop:      total  46.670742 [msec]
+           bulk  38.069192 [msec]
+       boundary  1.080520 [msec]
+           pack  0.803070 [msec]
+    communicate  40.277062 [msec]
+      comm. overlap  38.271462 [msec]
+  comm. non-overlap  2.005600 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   2.051480 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 64
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 3840  3840
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.098630 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  66.182288 [msec]  (1000 iterations)
+etime_norm2:       3.100359 [msec]   (100 times)
+etime_allreduce:   1.054550 [msec]   (100 times)
+hop:      total  46.856169 [msec]
+           bulk  38.147892 [msec]
+       boundary  1.092819 [msec]
+           pack  0.813970 [msec]
+    communicate  40.423262 [msec]
+      comm. overlap  38.348452 [msec]
+  comm. non-overlap  2.074810 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   2.056630 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 128
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 7680  7680
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 1.451540 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  68.291917 [msec]  (1000 iterations)
+etime_norm2:       3.915489 [msec]   (100 times)
+etime_allreduce:   1.866499 [msec]   (100 times)
+hop:      total  47.961832 [msec]
+           bulk  38.319644 [msec]
+       boundary  1.097059 [msec]
+           pack  0.813650 [msec]
+    communicate  41.206944 [msec]
+      comm. overlap  38.515654 [msec]
+  comm. non-overlap  2.691290 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   2.385449 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 256
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 15360  15360
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.186120 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  107.946690 [msec]  (1000 iterations)
+etime_norm2:       7.199040 [msec]   (100 times)
+etime_allreduce:   5.123540 [msec]   (100 times)
+hop:      total  85.486536 [msec]
+           bulk  38.709922 [msec]
+       boundary  1.060880 [msec]
+           pack  0.820020 [msec]
+    communicate  75.885737 [msec]
+      comm. overlap  38.903562 [msec]
+  comm. non-overlap  36.982175 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   5.302419 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 512
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 30720  30720
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.625000 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  198.853893 [msec]  (1000 iterations)
+etime_norm2:       10.992010 [msec]   (100 times)
+etime_allreduce:   8.922900 [msec]   (100 times)
+hop:      total  172.151815 [msec]
+           bulk  38.675053 [msec]
+       boundary  1.054650 [msec]
+           pack  0.797550 [msec]
+    communicate  157.507599 [msec]
+      comm. overlap  38.876863 [msec]
+  comm. non-overlap  118.630736 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   10.353116 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 1024
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 61440  61440
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 0.819480 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  385.795779 [msec]  (1000 iterations)
+etime_norm2:       19.958665 [msec]   (100 times)
+etime_allreduce:   17.889886 [msec]   (100 times)
+hop:      total  351.276489 [msec]
+           bulk  38.427846 [msec]
+       boundary  1.066040 [msec]
+           pack  0.796670 [msec]
+    communicate  322.933854 [msec]
+      comm. overlap  38.630946 [msec]
+  comm. non-overlap  284.302908 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   24.019135 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 2048
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 122880  122880
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 1.576629 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  757.481340 [msec]  (1000 iterations)
+etime_norm2:       32.481605 [msec]   (100 times)
+etime_allreduce:   30.417806 [msec]   (100 times)
+hop:      total  708.894037 [msec]
+           bulk  38.297148 [msec]
+       boundary  1.048480 [msec]
+           pack  0.781720 [msec]
+    communicate  659.387950 [msec]
+      comm. overlap  38.497088 [msec]
+  comm. non-overlap  620.890862 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   45.225587 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 4096
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 245760  245760
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 2.974100 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  1513.756430 [msec]  (1000 iterations)
+etime_norm2:       67.564230 [msec]   (100 times)
+etime_allreduce:   65.478721 [msec]   (100 times)
+hop:      total  1430.016872 [msec]
+           bulk  38.052274 [msec]
+       boundary  1.060640 [msec]
+           pack  0.782490 [msec]
+    communicate  1346.389517 [msec]
+      comm. overlap  38.252694 [msec]
+  comm. non-overlap  1308.136823 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   79.329455 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+factor for extra buffer: 8192
+initializing mult_utofu_double_buf: Px, Py = 48, 4; NNx, NNy = 2880, 240
+size_x size_y: 491520  491520
+ dir=0, tni_id=0
+ dir=1, tni_id=1
+ dir=2, tni_id=2
+ dir=3, tni_id=3
+init: 4.894039 [msec]
+---------------------------------------------
+   solving with utofu double buffer
+---------------------------------------------
+Nx=60, Ny=60, n_iter=1000
+rankmap_lib: calling get_tni_list for dim=2, flag=2
+iteration=0, norm2(solution): 0.0594884
+iteration=10, norm2(solution): 4.31518
+iteration=20, norm2(solution): 12.3919
+iteration=30, norm2(solution): 21.6013
+iteration=40, norm2(solution): 30.5652
+iteration=50, norm2(solution): 38.6477
+iteration=60, norm2(solution): 45.6206
+iteration=70, norm2(solution): 51.4699
+iteration=80, norm2(solution): 56.2847
+iteration=90, norm2(solution): 60.1956
+iteration=100, norm2(solution): 63.3422
+iteration=110, norm2(solution): 65.8561
+iteration=120, norm2(solution): 67.8538
+iteration=130, norm2(solution): 69.4353
+iteration=140, norm2(solution): 70.6833
+iteration=150, norm2(solution): 71.666
+iteration=160, norm2(solution): 72.4384
+iteration=170, norm2(solution): 73.0446
+iteration=180, norm2(solution): 73.5199
+iteration=190, norm2(solution): 73.8924
+iteration=200, norm2(solution): 74.1839
+iteration=210, norm2(solution): 74.4121
+iteration=220, norm2(solution): 74.5906
+iteration=230, norm2(solution): 74.7302
+iteration=240, norm2(solution): 74.8393
+iteration=250, norm2(solution): 74.9246
+iteration=260, norm2(solution): 74.9913
+iteration=270, norm2(solution): 75.0434
+iteration=280, norm2(solution): 75.0841
+iteration=290, norm2(solution): 75.1159
+iteration=300, norm2(solution): 75.1408
+iteration=310, norm2(solution): 75.1602
+iteration=320, norm2(solution): 75.1754
+iteration=330, norm2(solution): 75.1872
+iteration=340, norm2(solution): 75.1965
+iteration=350, norm2(solution): 75.2037
+iteration=360, norm2(solution): 75.2094
+iteration=370, norm2(solution): 75.2138
+iteration=380, norm2(solution): 75.2173
+iteration=390, norm2(solution): 75.22
+iteration=400, norm2(solution): 75.2221
+iteration=410, norm2(solution): 75.2237
+iteration=420, norm2(solution): 75.225
+iteration=430, norm2(solution): 75.226
+iteration=440, norm2(solution): 75.2268
+iteration=450, norm2(solution): 75.2274
+iteration=460, norm2(solution): 75.2279
+iteration=470, norm2(solution): 75.2282
+iteration=480, norm2(solution): 75.2285
+iteration=490, norm2(solution): 75.2288
+iteration=500, norm2(solution): 75.2289
+iteration=510, norm2(solution): 75.2291
+iteration=520, norm2(solution): 75.2292
+iteration=530, norm2(solution): 75.2293
+iteration=540, norm2(solution): 75.2293
+iteration=550, norm2(solution): 75.2294
+iteration=560, norm2(solution): 75.2294
+iteration=570, norm2(solution): 75.2295
+iteration=580, norm2(solution): 75.2295
+iteration=590, norm2(solution): 75.2295
+iteration=600, norm2(solution): 75.2295
+iteration=610, norm2(solution): 75.2295
+iteration=620, norm2(solution): 75.2295
+iteration=630, norm2(solution): 75.2296
+iteration=640, norm2(solution): 75.2296
+iteration=650, norm2(solution): 75.2296
+iteration=660, norm2(solution): 75.2296
+iteration=670, norm2(solution): 75.2296
+iteration=680, norm2(solution): 75.2296
+iteration=690, norm2(solution): 75.2296
+iteration=700, norm2(solution): 75.2296
+iteration=710, norm2(solution): 75.2296
+iteration=720, norm2(solution): 75.2296
+iteration=730, norm2(solution): 75.2296
+iteration=740, norm2(solution): 75.2296
+iteration=750, norm2(solution): 75.2296
+iteration=760, norm2(solution): 75.2296
+iteration=770, norm2(solution): 75.2296
+iteration=780, norm2(solution): 75.2296
+iteration=790, norm2(solution): 75.2296
+iteration=800, norm2(solution): 75.2296
+iteration=810, norm2(solution): 75.2296
+iteration=820, norm2(solution): 75.2296
+iteration=830, norm2(solution): 75.2296
+iteration=840, norm2(solution): 75.2296
+iteration=850, norm2(solution): 75.2296
+iteration=860, norm2(solution): 75.2296
+iteration=870, norm2(solution): 75.2296
+iteration=880, norm2(solution): 75.2296
+iteration=890, norm2(solution): 75.2296
+iteration=900, norm2(solution): 75.2296
+iteration=910, norm2(solution): 75.2296
+iteration=920, norm2(solution): 75.2296
+iteration=930, norm2(solution): 75.2296
+iteration=940, norm2(solution): 75.2296
+iteration=950, norm2(solution): 75.2296
+iteration=960, norm2(solution): 75.2296
+iteration=970, norm2(solution): 75.2296
+iteration=980, norm2(solution): 75.2296
+iteration=990, norm2(solution): 75.2296
+etime_solver:  3020.483872 [msec]  (1000 iterations)
+etime_norm2:       123.367470 [msec]   (100 times)
+etime_allreduce:   121.285180 [msec]   (100 times)
+hop:      total  2879.338516 [msec]
+           bulk  37.982903 [msec]
+       boundary  1.067920 [msec]
+           pack  0.781189 [msec]
+    communicate  2727.616557 [msec]
+      comm. overlap  38.182113 [msec]
+  comm. non-overlap  2689.434444 [msec]
+ initiate recv   0.000000 [msec]
+     send wait   147.423201 [msec]
+time resolution: 1e-06 msec.
+done: utofu double buffer
+iteration=1000, relative diff2: 2.67619e-22
+norm2 of the solution=   7.522958187230014e+01
+
+total elapsed time:  6644.635751 [msec]
