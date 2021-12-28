@@ -7,7 +7,7 @@ Test program for Double Buffering for stensil applications.
   2019 Sep. 10 for public version
   Ken-Ichi Ishikawa (Hiroshima U.,ishikawa@thoe.phys.sci.hiroshima-u.ac.jp)
 
-  2021 Dec.   version with uTofu interface
+  2021 Dec. 28 version with uTofu interface, which utilizes communication part of qws.
   Issaku Kanamori (RIKEN R-CCS, kanamori-i@riken.jp)
 
 
@@ -110,6 +110,14 @@ Files:
     Implementations of the hopping
   
   *jacobi2d.cpp:
-    main function
+    main functions
+
+  rdma_utofu:
+    implementation of the double buffering communication with utofu.
+    See the reamde file there for more details.
+
+  rankmap_utofu_2d:
+    implementation of the rankmap.
+    See the reamde file there for more details.
 
 ========================================================================================== 
